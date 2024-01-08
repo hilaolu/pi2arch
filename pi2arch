@@ -18,3 +18,6 @@ find / \( ! -path '/dev/*' -and ! -path '/proc/*' -and ! -path '/sys/*' -and ! -
 /test/usr/lib/ld-*.so.* --library-path "/test/usr/lib" "/test/bin/cp" -rp /test/* / 
 
 rm -rf /test
+
+pacman-key --init
+pacman-key --populate archlinuxarm
